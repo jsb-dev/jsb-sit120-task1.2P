@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    border: 1px solid black;
+    padding: 20px;
+    width: 80%;
+}
+
+.methods-section {
+    margin-bottom: 20px;
+}
+
+.methods-section h2 {
+    text-align: center;
+}
+
+.methods-section table {
+    width: 100%;
+}
+
+.methods-section th, .methods-section td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
