@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Task 1.2P</title>
   </head>
+  <style>
+    :root {
+      font-size: 1vmax;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-radius: 5px;
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: rgb(20, 20, 20);
+    }
+
+    .main-container {
+      box-shadow: 0 0 60px 5px rgba(255, 255, 255, 0.3);
+      background-color: rgba(30, 30, 30);
+      padding: 20px;
+      width: 80%;
+    }
+
+    .methods-section {
+      margin-bottom: 20px;
+    }
+
+    .methods-section h2 {
+      text-align: center;
+    }
+
+    .methods-section table {
+      width: 100%;
+    }
+
+    .methods-section th,
+    .methods-section td {
+      border: 1px solid white;
+      padding: 5px;
+      text-align: center;
+    }
+
+    thead:nth-child(1),
+    td:nth-child(1) {
+      width: 20rem;
+    }
+
+    thead {
+      background-color: rgb(76, 76, 110);
+    }
+
+    td:nth-child(1) {
+      background-color: rgb(2, 2, 28);
+    }
+
+    td:nth-child(2) {
+      width: 10rem;
+      background-color: rgb(39, 39, 54);
+    }
+
+    td,
+    th {
+      box-shadow: 0 0 8px 1px rgb(255, 255, 255);
+    }
+  </style>
   <body>
     <div class="main-container">
       <!-- String methods -->
@@ -78,6 +146,6 @@
         </table>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="methods.js"></script>
   </body>
 </html>

@@ -12,24 +12,24 @@ const methodCategoryArray = [
     id: 'string-methods-body',
     methods: [
       {
-        operation: "'Hello'.toUpperCase()",
-        output: 'Hello'.toUpperCase(),
+        operation: "'Jacob Booth'.toUpperCase()",
+        output: 'Jacob Booth'.toUpperCase(),
       },
       {
-        operation: "'Hello'.toLowerCase()",
-        output: 'Hello'.toLowerCase(),
+        operation: "'Jacob Booth'.toLowerCase()",
+        output: 'Jacob Booth'.toLowerCase(),
       },
       {
-        operation: "' Hello '.trim()",
-        output: ' Hello '.trim(),
+        operation: "' Jacob Booth '.trim()",
+        output: ' Jacob Booth '.trim(),
       },
       {
-        operation: "'Hello'.charAt(0)",
-        output: 'Hello'.charAt(0),
+        operation: "'Jacob Booth'.charAt(0)",
+        output: 'Jacob Booth'.charAt(0),
       },
       {
-        operation: "'Hello'.replace('H', 'J')",
-        output: 'Hello'.replace('H', 'J'),
+        operation: "'Jacob Booth'.replace('H', 'J')",
+        output: 'Jacob Booth'.replace('H', 'J'),
       },
     ],
   },
@@ -38,24 +38,24 @@ const methodCategoryArray = [
     id: 'number-methods-body',
     methods: [
       {
-        operation: '(123.456).toFixed(2)',
-        output: (123.456).toFixed(2),
+        operation: '(456.789).toFixed(2)',
+        output: (456.789).toFixed(2),
       },
       {
-        operation: 'Math.round(123.456)',
-        output: Math.round(123.456),
+        operation: 'Math.round(456.789)',
+        output: Math.round(456.789),
       },
       {
-        operation: 'Math.floor(123.456)',
-        output: Math.floor(123.456),
+        operation: 'Math.floor(456.789)',
+        output: Math.floor(456.789),
       },
       {
-        operation: 'Math.ceil(123.456)',
-        output: Math.ceil(123.456),
+        operation: 'Math.ceil(456.789)',
+        output: Math.ceil(456.789),
       },
       {
-        operation: 'Math.sqrt(16)',
-        output: Math.sqrt(16),
+        operation: 'Math.sqrt(10000)',
+        output: Math.sqrt(10000),
       },
     ],
   },
@@ -72,8 +72,8 @@ const methodCategoryArray = [
         output: [1, 2, 3, 4].pop(),
       },
       {
-        operation: "['apple', 'banana', 'cherry'].join(', ')",
-        output: ['apple', 'banana', 'cherry'].join(', '),
+        operation: "['mars', 'moon', 'star'].join(', ')",
+        output: ['mars', 'moon', 'star'].join(', '),
       },
       {
         operation: '[true, false].reverse()',
