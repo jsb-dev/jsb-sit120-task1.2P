@@ -33,8 +33,8 @@
         justify-content: space-around;
       }
 
-      .container.portable-vertical,
-      .container.portable-horizontal {
+      .container.portable-vertical {
+        display: flex;
         flex-direction: column;
       }
 
@@ -56,13 +56,7 @@
         padding: 0;
       }
 
-      ul.portable-horizontal {
-        display: flex;
-        flex-direction: row;
-      }
-
       ul.portable-vertical {
-        display: flex;
         flex-direction: column;
       }
 
@@ -139,11 +133,14 @@
             container.classList.add('portable-vertical');
             list.classList.remove('portable-horizontal');
             list.classList.add('portable-vertical');
-          } else {
-            container.classList.remove('portable-horizontal');
+          } else if (
+            !viewportIsPortable &&
+            viewportOrientation === 'horizontal'
+          ) {
             container.classList.remove('portable-vertical');
-            list.classList.remove('portable-horizontal');
+            container.classList.add('portable-horizontal');
             list.classList.remove('portable-vertical');
+            list.classList.add('portable-horizontal');
           }
         });
       }
