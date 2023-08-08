@@ -122,7 +122,7 @@
           window.innerWidth > window.innerHeight ? 'horizontal' : 'vertical';
         let viewportIsPortable =
           (viewportOrientation === 'vertical' && window.innerWidth < 600) ||
-          (viewportOrientation === 'horizontal' && window.innerWidth < 800);
+          (viewportOrientation === 'horizontal' && window.innerWidth < 950);
 
         container.className = 'container';
 
@@ -153,31 +153,3 @@
     </script>
   </body>
 </html>
-
-<!-- 
-    
-    Responsiveness Strategy
-    
-    - A centered container in the middle of the page. 
-
-    - This container holds 4 unordered lists, each spaced horizontally and evenly
-
-    - The lists are all spaced horizontally and evenly across the container
-
-    - CSS sets the following:
-    :root {
-        font-size: 1vmax;
-    }
-    and references rem units everwhere else
-
-    - In JS, we will create viewportOrientation and viewportIsPortable values, which will be tracked by the lists and the container:
-    viewportOrientation = width > height ? 'horizontal' : 'vertical'
-    viewportIsPortable = 'vertical' and max width < 600px || 'horizontal' and max width < 800px ? true : false
-    We will use event listeners to track the orientation and size of the viewport
-
-    - Using the JS values, we will implement the following formatting:
-        . If !viewportIsPortable then default spacing (see above)
-        . If viewportIsPortable and 'horizontal' then space the lists in the container vertically, but the lists themselves are still aligned horizontally
-        . if viewportIsPortable and 'vertical' then space the lists in the container vertically, and the lists themselves should also be displayed vertically
-
--->
